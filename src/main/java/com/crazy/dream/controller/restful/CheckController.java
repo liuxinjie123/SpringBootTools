@@ -1,4 +1,4 @@
-package com.crazy.dream.controller;
+package com.crazy.dream.controller.restful;
 
 import com.crazy.dream.common.constants.Constants;
 import com.crazy.dream.common.result.Result;
