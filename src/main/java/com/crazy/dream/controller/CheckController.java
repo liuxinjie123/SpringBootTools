@@ -2,7 +2,7 @@ package com.crazy.dream.controller;
 
 import com.crazy.dream.common.constants.Constants;
 import com.crazy.dream.common.result.Result;
-import com.crazy.dream.service.ListService;
+import com.crazy.dream.service.SystemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,10 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CheckController {
     @Autowired
-    private ListService listService;
+    private SystemService systemService;
 
     @GetMapping("/system/list")
-    public Result getCurrentServerSystem() {
-        return Result.setCode(Constants.RETURN_OK).setData(listService.showListCmd());
+    public Result getCurrentServerSystemListCmd() {
+        return Result.setCode(Constants.RETURN_OK).setData(systemService.showListCmd());
+    }
+
+    @GetMapping("/system/name")
+    public Result getCurrentServerSystemName() {
+        return Result.setCode(Constants.RETURN_OK).setData(systemService.getCurrentSystemName());
     }
 }
