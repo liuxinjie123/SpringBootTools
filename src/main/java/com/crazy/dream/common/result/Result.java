@@ -1,7 +1,5 @@
 package com.crazy.dream.common.result;
 
-import com.crazy.dream.common.constants.Constants;
-
 import java.io.Serializable;
 
 public class Result<T> implements Serializable {
@@ -32,10 +30,6 @@ public class Result<T> implements Serializable {
 
     public static Result setCode(String code) {
         return new Result().setReturnCode(code);
-    }
-
-    public static Result setMsg(String msg) {
-        return new Result().setReturnMsg(Constants.RETURN_OK).setReturnMsg(msg);
     }
 
     public static Result setCodeMsg(String code, String msg) {
