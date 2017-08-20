@@ -24,5 +24,4 @@ public class ScheduleTask {
     public void cronTask() {
         logger.info(" This is cron Task.");
     }
-
 }
