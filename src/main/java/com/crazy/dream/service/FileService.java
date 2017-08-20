@@ -1,5 +1,7 @@
 package com.crazy.dream.service;
 
+import org.springframework.scheduling.annotation.Async;
+
 import java.io.IOException;
 
 public interface FileService {
