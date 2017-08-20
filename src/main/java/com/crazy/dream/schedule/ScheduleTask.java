@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 public class ScheduleTask {
     private static final Logger logger = LoggerFactory.getLogger(ApplicationRun.class);
 
-    @Scheduled(fixedDelay = 10000)
+    @Scheduled(fixedDelay = 60000)
     public void fixedDelayTask() {
         logger.info(" This is fixed Delay task.");
     }
 
-    @Scheduled(fixedRate = 30000)
+    @Scheduled(fixedRate = 120000)
     public void fixedRateTask() {
         logger.info(" This is fixed Rate task.");
     }

@@ -1,4 +1,4 @@
-package com.crazy.dream.controller.restful;
+package com.crazy.dream.controller.restful.common;
 
 import com.crazy.dream.common.constants.Constants;
 import com.crazy.dream.common.result.Result;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 
 @RequestMapping("/file")
-@RestController
+@RestController("restful.common.fileController")
 public class FileController {
     @Autowired
     private FileService fileService;

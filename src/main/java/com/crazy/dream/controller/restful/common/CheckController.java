@@ -1,4 +1,4 @@
-package com.crazy.dream.controller.restful;
+package com.crazy.dream.controller.restful.common;
 
 import com.crazy.dream.common.constants.Constants;
 import com.crazy.dream.common.result.Result;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/check")
-@RestController
+@RestController("common.restful.checkController")
 public class CheckController {
     @Autowired
     private SystemService systemService;
