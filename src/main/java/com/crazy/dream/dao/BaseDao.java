@@ -16,4 +16,8 @@ public class BaseDao implements Serializable {
     private String createUserCode;
     private LocalDateTime lastUpdateTime;
     private String lastUpdateUserCode;
+
+    public BaseDao (int id) {
+        this.id = id;
+    }
 }

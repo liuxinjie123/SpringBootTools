@@ -1,0 +1,1 @@
+ALTER TABLE a_visit_log modify `use_time` VARCHAR(50) DEFAULT NULL COMMENT '请求处理时间，单位毫秒';

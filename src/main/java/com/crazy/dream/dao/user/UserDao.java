@@ -1,5 +1,6 @@
-package com.crazy.dream.dao;
+package com.crazy.dream.dao.user;
 
+import com.crazy.dream.dao.BaseDao;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

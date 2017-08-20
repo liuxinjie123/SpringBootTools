@@ -17,7 +17,6 @@ public class JsonTestController {
 
     @GetMapping(value = "/path", produces = "application/json; charset=UTF-8")
     public Result jsonTestIndex(HttpServletRequest request) {
-        logger.info(" -------------------- json test url method ------------------- ");
         String url = "url:" + request.getRequestURL() + " can access.";
         return Result.setCode(Constants.RETURN_OK).setData(url);
     }
