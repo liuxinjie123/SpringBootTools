@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Upload page</title>
+</head>
+<body>
+<h1>Upload File</h1>
+<div class="upload">
+    <form action="upload/file" enctype="multipart/form-data" method="post">
+        <input th:type="file" name="file" />
+        <br />
+        <input th:type="submit" value="上传" />
+    </form>
+
+</div>
+</body>
+</html>

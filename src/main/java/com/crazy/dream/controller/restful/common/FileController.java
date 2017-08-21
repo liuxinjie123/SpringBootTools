@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @RequestMapping("/file")
 @RestController("restful.common.fileController")
-public class FileController {
+public class FileController extends BaseController {
     @Autowired
     private FileService fileService;
 

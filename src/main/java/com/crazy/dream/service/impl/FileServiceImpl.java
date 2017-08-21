@@ -19,7 +19,7 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public String readFile() throws IOException {
-        String filePath = rootFilePath + "Hello.txt";
+        String filePath = "file:" + rootFilePath + "Hello.txt";
         Resource resource = resourceLoader.getResource(filePath);
         return IOUtils.toString(resource.getInputStream());
     }

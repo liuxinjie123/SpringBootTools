@@ -41,8 +41,6 @@ public class UserVisitInterceptorAdapter extends HandlerInterceptorAdapter {
             String userIp = WebUtils.getIpAddress(request);
             String requestType = request.getMethod();
             String useTimeStr = String.valueOf(useTime);
-            logger.info(request.getMethod() + " --- " + request.getRequestURL() + " --- " + request.getPathInfo() + " --- " + request.getRequestURI());
-            logger.info(request.getRequestURI(), request.getQueryString(), method.getMethod().getName(), request.getHeader("user-agent"), WebUtils.getIpAddress(request), request.getMethod());
             UserVisitLogDao userVisitLogDao = new UserVisitLogDao( url, methodName, null, null, null, userAgent, userIp, requestType, useTimeStr);
             userVisitLogMapper.save(userVisitLogDao);
         }

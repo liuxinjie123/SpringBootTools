@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/check")
 @RestController("common.restful.checkController")
-public class CheckController {
+public class CheckController extends BaseController {
     @Autowired
     private SystemService systemService;
 
