@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Options;
 
 public interface GenerateCodeMapper {
 
-    @Insert("insert into a_create_code (type, name, create_time) " +
+    @Insert("insert into a_generate_code (type, name, create_time) " +
             "values(#{type}, #{name}, now())")
     @Options(useGeneratedKeys=true)
     int generateCode(GenerateCodeDao generateCodeDao);
