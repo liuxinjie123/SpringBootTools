@@ -2,6 +2,7 @@ package com.crazy.dream.mapper;
 
 import com.crazy.dream.dao.user.UserVisitLogDao;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Options;
 
 public interface UserVisitLogMapper {
 

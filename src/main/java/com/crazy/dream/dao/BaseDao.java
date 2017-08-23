@@ -20,4 +20,13 @@ public class BaseDao implements Serializable {
     public BaseDao (int id) {
         this.id = id;
     }
+
+    public BaseDao (String name) {
+        this.name = name;
+    }
+
+    public BaseDao (String code, String name) {
+        this.code = code;
+        this.name = name;
+    }
 }

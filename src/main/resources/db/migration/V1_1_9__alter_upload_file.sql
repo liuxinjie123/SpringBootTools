@@ -1,0 +1,1 @@
+ALTER TABLE a_upload_file_by_user CHANGE file_orig_name orig_file_name VARCHAR(100) NOT NULL COMMENT '文件原名';

@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BaseController {
-    public String getUserId() {
-        return "1";
+    public String getUserCode() {
+        return "U20170823000001";
     }
 }

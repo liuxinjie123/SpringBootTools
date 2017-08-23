@@ -1,0 +1,1 @@
+ALTER TABLE a_create_code MODIFY type VARCHAR(20) COMMENT '类型';
