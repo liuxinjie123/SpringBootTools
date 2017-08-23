@@ -1,6 +1,8 @@
 package com.crazy.dream.service.common;
 
+import java.util.concurrent.Future;
+
 public interface GenerateCodeService {
 
-    String generateCode(String type, String name);
+    Future<String> generateCode(String type, String name);
 }
